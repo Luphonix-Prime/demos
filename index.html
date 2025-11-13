@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUPHONIX ⚡ We Build the Future</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.95/build/spline-viewer.js"></script>
+</head>
+<body>
+    <div class="hero-section">
+        <div class="spline-background">
+            <spline-viewer url="https://prod.spline.design/dJqTIQ-tE3ULUPMi/scene.splinecode"></spline-viewer>
+            <div class="spline-overlay"></div>
+        </div>
+        
+        <div class="hero-content" id="heroContent">
+            <div class="hero-content-wrapper">
+                <div class="hero-left">
+                    <h1 class="hero-title">
+                        We're Building<br />
+                        Cool Experiences
+                    </h1>
+                    <div class="hero-subtitle">AI \ WEB3 \ UI \ 3D \ MOTION</div>
+                </div>
+                
+                <div class="hero-right">
+                    <p class="hero-description">
+                        Crafting Awesome Stories and Killer Designs to Make Brand Stand Out
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn-outline">Contact Us</button>
+                        <button class="btn-primary">
+                            <svg class="btn-icon" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 4C11.4477 4 11 4.44772 11 5V11H5C4.44772 11 4 11.4477 4 12C4 12.5523 4.44772 13 5 13H11V19C11 19.5523 11.4477 20 12 20C12.5523 20 13 19.5523 13 19V13H19C19.5523 13 20 12.5523 20 12C20 11.4477 19.5523 11 19 11H13V5C13 4.44772 12.5523 4 12 4Z" fill="currentColor" />
+                            </svg>
+                            Get Started
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="search-filter-section">
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="🔍 Search projects..." class="search-input">
+        </div>
+        <div class="filter-container">
+            <select id="categoryFilter" class="filter-select">
+                <option value="all">All Categories</option>
+                <option value="Web Development">Web Development</option>
+                <option value="Automation">Automation</option>
+                <option value="Design">Design</option>
+                <option value="AI">AI</option>
+                <option value="Cloud">Cloud</option>
+                <option value="eCommerce">eCommerce</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="projects-section" id="projectsSection">
+        <div class="projects-grid" id="projectsGrid">
+        </div>
+        <div class="no-results" id="noResults" style="display: none;">
+            <p>No projects found matching your criteria.</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2025 LUPHONIX | Designed with ⚡ innovation & precision.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
